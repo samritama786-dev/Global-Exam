@@ -1,0 +1,265 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+    :root {
+      --announcement-bg: #5B3E35; /* Warm brown tone */
+      --navbar-bg: #EFECE6;        /* Light beige background */
+      --text-color: #222222;       /* Near black for text */
+      --divider-color: #D3CDC6;    /* Subtle vertical divider */
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Announcement Bar Styling */
+    .announcement-bar {
+      background-color: var(--announcement-bg);
+      color: #FFFFFF;
+      font-size: 0.8rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 10px 0;
+    }
+
+    .announcement-bar a {
+      color: #FFFFFF;
+      text-decoration: underline;
+      transition: opacity 0.2s ease;
+    }
+
+    .announcement-bar a:hover {
+      opacity: 0.85;
+    }
+
+    /* Navbar Main Styling */
+    .navbar-custom {
+      background-color: var(--navbar-bg);
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    /* Logo Badge Styling */
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--text-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    /* Nav Links Styling */
+    .navbar-custom .nav-link {
+      color: var(--text-color);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-left: 14px;
+      padding-right: 14px;
+      transition: opacity 0.2s ease;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: var(--text-color);
+      opacity: 0.6;
+    }
+
+    /* Right Action Icons */
+    .icon-link {
+      color: var(--text-color);
+      font-size: 1.25rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      transition: opacity 0.2s ease;
+    }
+
+    .icon-link:hover {
+      color: var(--text-color);
+      opacity: 0.6;
+    }
+
+    /* Vertical Separator Dividers between Icons */
+    .icon-divider {
+      width: 1px;
+      height: 20px;
+      background-color: var(--divider-color);
+    }
+
+    .hero-banner {
+      position: relative;
+      width: 100%;
+      height: 85vh;
+      min-height: 520px;
+      /* Replace URL with your background image path */
+      background: url('/img/Banner.jpg') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Subtle Overlay */
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.08); 
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #FFFFFF;
+      text-align: center;
+      max-width: 650px;
+      padding: 0 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 12px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      line-height: 1.25;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-shop-now {
+      background-color: #FFFFFF;
+      color: #222222;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 10px 24px;
+      border: none;
+      border-radius: 0;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .btn-shop-now:hover {
+      background-color: #5C3D31;
+      color: #FFFFFF;
+    }
+
+    .about-section {
+      background-color: #F8F4F0; /* Soft warm background color */
+      padding: 80px 0;
+    }
+
+    /* Left Column Content Styles */
+    .left-image-wrapper {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .left-image-wrapper img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-text {
+      color: #7A726D;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .btn-shop-now {
+      background-color: #5C3D31; /* Dark brown button */
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 0;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-shop-now:hover {
+      background-color: #3d2820;
+      color: #FFFFFF;
+    }
+
+    /* Right Column Content Styles */
+    .section-subtitle {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #4A4A4A;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      letter-spacing: 1.5px;
+      color: #5C3D31;
+      text-transform: uppercase;
+      line-height: 1.25;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .right-image-wrapper {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .right-image-wrapper img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Responsive Typography */
+    @media (max-width: 991px) {
+      .about-section {
+        padding: 50px 0;
+      }
+      .section-title {
+        font-size: 1.75rem;
+      }
+    }
